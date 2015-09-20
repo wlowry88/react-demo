@@ -5,8 +5,8 @@ namespace :db do
 
 		10.times do
 			Comment.create(
-        author: Faker::Name.first_name + " " + Faker::Name.last_name,
-        comment: Faker::HipsterIpsum.words(10).join(' ')
+        author: FFaker::Name.first_name + " " + FFaker::Name.last_name,
+        comment: FFaker::HipsterIpsum.words(10).join(' ')
 			)
 		end
 	end
